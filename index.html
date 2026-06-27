@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        🚌 BusBook
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Bookings</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>Book Bus Tickets Online</h1>
+
+    <p>Travel Comfortable • Safe • Affordable</p>
+
+</section>
+
+
+<div class="search-card">
+
+<h2>Search Bus</h2>
+
+<div class="search-grid">
+
+<input type="text" id="from" placeholder="From">
+
+<input type="text" id="to" placeholder="To">
+
+<input type="date" id="date">
+
+<button onclick="searchBus()">Search</button>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<div class="bus-list" id="busList">
+
+</div>
+
+
+<div class="booking-card">
+
+<h2>Booking Summary</h2>
+
+<p><strong>Bus:</strong> <span id="busName">-</span></p>
+
+<p><strong>Seat:</strong> <span id="seatNumber">-</span></p>
+
+<p><strong>Fare:</strong> ₹<span id="fare">0</span></p>
+
+<button id="bookBtn">Book Ticket</button>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
